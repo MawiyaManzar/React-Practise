@@ -1,12 +1,15 @@
-# React + Vite
+## Atom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Atom is the most smallest unit of state you use to store variable similar to usestate. but they are more optimal then useState hook
 
-Currently, two official plugins are available:
+first make a atoms.js file.
+recoild provides you with a lot of hooks userecoilState,useRecoilValue,useSetRecoilState
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+useRecoilValue- gives you the actual number / value
+useRecoilState-give both the value(count) and updating state variable (eg:setcount)
+useSetRecoilState- only give the function to update state
 
-## Expanding the ESLint configuration
+## Selectors
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Selector is derived from other atoms.
+here you give a key and a value. you use {get} 
